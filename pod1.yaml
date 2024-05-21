@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod
+spec:
+  containers:
+    - name: c00
+      image: mrabhinav2020/coumpute-monitor-app
+      command: ["/bin/bash", "-c"]
+      args: ["python3 app.py"]
+
